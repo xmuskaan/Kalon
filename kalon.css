@@ -1,0 +1,372 @@
+*{
+margin:0;
+padding:0;
+font-family:sans-serif;  
+
+}
+body{
+    overflow-x: hidden;
+}
+a{
+text-decoration: none;
+color:#fff;
+}
+
+
+
+/* Navbar */
+
+.NavBar{
+    height: 100px;
+    background-color: #8E1D53;
+    width: 100vw;
+    color:#fff;
+    display: grid;
+
+}
+.container{
+    width:1100px;
+    height:auto;
+    margin: auto;
+}
+
+.navCon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navCon .Title{
+    font-size: 30px;
+    color:#F8CA86;
+}
+.navCon span{
+    margin-left:40px;
+
+}
+
+
+
+/* Showcase */
+
+.Showcase{
+    width:100vw;
+    height:calc(100vh - 100px);
+    display:grid;
+    place-content: center;
+    
+
+}
+
+.heroContent{
+    height:500px;
+    width:100%;
+    display: flex;
+    
+
+}
+
+.box1{
+    flex:1;
+}
+
+.box1 h2{
+    color:#1E0E62;
+    font-size:58px;
+    margin-top: 30px;
+    margin-bottom: 42px;
+}
+
+.smallText{
+    font-size:17px;
+}
+
+.box1 h4{
+    color:#151439;
+    font-weight:lighter;
+    margin-right: 100px;
+    margin-bottom: 42px;
+}
+
+.buttonSmall{
+    width:206px;
+    height:60px;
+    background-color:#8E1D53;
+    border-radius: 100px;
+    border-style: none;
+    cursor:pointer;
+    font-size: 15px;
+}
+
+.buttonSmall a{
+    color:#FFD596;
+}
+
+.box2{
+    flex:1;
+   
+   
+}
+.imageShowcase{
+    overflow-y:hidden;
+}
+
+.imageShowcase img{
+    width:100%;
+    height: 500px;
+    border-radius: 50px;
+    
+}
+
+
+
+/* Featured Products */
+
+.Featured{
+
+    width:100%;
+    background-color:#8E1D53;
+    color:white;
+}
+
+.featuredCon{
+    width:1100px;
+    height:1450px;
+    margin:auto;
+    }
+
+.featuredHead{
+    padding-top:80px;
+    padding-bottom: 50px;
+    text-align: center;
+    line-height: 26px;
+    
+}
+
+.featuredHead h2{
+ padding-bottom:20px;
+ color:#F8CA86;
+}
+
+
+.featProduct{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    /* grid-gap:20px; */
+    width:100%;
+    /* background-color: darkviolet; */
+   /* border:2px solid black; */
+    
+   
+}
+
+.featProduct img{
+height:400px;
+width:100%;
+border-radius:10px;
+}
+
+.featProduct>div{
+    /* border:1px solid black; */
+    text-align: center;
+    padding:10px;
+    cursor:pointer;
+
+}
+.featProduct>div:nth-of-type(1){
+grid-column:2/4;
+margin-right:20px;
+
+
+}
+
+.featProduct>div:nth-of-type(2){
+    grid-column:4/6;
+    }
+    
+    .featProduct>div:nth-of-type(3){
+        grid-column:3/5;
+        margin-top: 40px;
+        }
+        
+.viewMore{
+    position:absolute;
+    left:675px;
+    width:180px;
+    height:60px;
+    background-color:#8E1D53;
+    color:#fff;
+    border-radius: 100px;
+    border-style: none;
+    cursor:pointer;
+    font-size: 15px;
+    border:1px solid #fff;
+    margin-top: 20px;
+}
+
+.send{
+    width:180px;
+    height:60px;
+    background-color:#333;
+    color:#fff;
+    border-radius: 100px;
+    border-style: none;
+    cursor:pointer;
+    font-size: 15px;
+    margin-left: 20px;
+   }
+
+.featBottom{
+    margin-top: 150px;
+    text-align: center;
+
+}
+.featBottom h3{
+    margin-bottom: 30px;
+    color:#F8CA86;
+    
+}
+.emailInfo{
+    width:360px;
+    height:60px;
+    background-color:#8E1D53;
+    border-radius: 100px;
+    border-style: none;
+    cursor:auto;
+    font-size: 15px;
+    border:1px solid #fff;
+    text-align: center;
+   
+}
+
+.emailInfo::placeholder{
+    color:#EBEBFF;
+   
+}
+
+/* Footer */
+
+.footer{
+    width:1100px;
+    margin:auto;
+    margin-top:50px;
+    margin-bottom: 30px;
+
+}
+
+.footer1{
+    color:#000;
+    display:flex;
+    justify-content: space-around;
+}
+
+.footerCon>div a{
+    color:#1E0E62;    
+}
+
+.sub1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 100px;
+    white-space: nowrap;
+
+}
+
+.sub2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:50px;
+    white-space: nowrap;  
+}
+
+.fbIcon .igIcon {
+    font-size: 2px;
+}
+
+.footer2{
+    text-align: center;
+    margin-top: 20px;
+    color:#151439;
+    opacity: 80%;
+}
+
+.devInfo{
+    margin-top:10px;
+}
+
+
+
+/******* Contact PAGE ************/
+
+.contactbg{
+    background-color: #2F1893;
+    background-image: url("./bogdan-petrea-cM5P5KIeAKA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 1520px 700px;
+}
+.contact{
+    width:1100px;
+    margin:auto;
+    height:90vh;   
+}
+
+.contact h3{
+    font-size:36px;
+    text-align: center;
+    margin-bottom:30px;
+    padding-top:30px;
+}
+
+.contactForm{
+    width:770px;
+    margin:auto;
+}
+.contactForm input[type=text]{
+    margin-right: 30px;
+}
+.textLabel{
+    width:330px;
+    height:50px;
+    border-radius: 100px;
+    border: 1px black solid;
+    margin-bottom:20px;
+    padding-left:30px;
+}
+
+input:focus {
+    border: 3px solid #555;
+  }
+
+.textArea{
+    width:768px;
+    height:170px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+.response{
+    margin-top:20px;
+}
+
+.response button{
+    float:right;
+}
+
+.call{
+    display: flex;
+    margin-top:100px;
+    margin-left:150px;
+}
+.textLine{
+    padding: 0 20px 20px 20px;
+}
+.lineDivide{
+    width:350px; 
+}
+
+.contact h4{
+    text-align: center;
+    margin-left: 40px;
+
+}
