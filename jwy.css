@@ -1,0 +1,213 @@
+body{
+width: auto;
+height:auto;
+margin:0;
+border:0;
+background-color: #e3e9ff;
+color:darkslategrey;
+font-family: "Baskerville Old Face";
+}
+
+
+.main{
+background-color:#ffd3f8;
+position: absolute;
+top:15px;
+left:125px;
+margin:10px;
+height:510vh;
+width: 1250px;
+padding:10px;
+position: relative;
+border-left: 2px solid darkslategrey;
+box-shadow:20px 10px #a1e5f0;
+}
+
+.title{
+position:absolute;
+top:20px;
+left:20px;
+font-size:24px;
+font-family: "Times New Roman",serif;
+color:#170847;
+padding:10px;
+}
+
+.tagline{
+position:absolute;
+top:100px;
+left:15px;
+font-family: serif;
+font-size:18px;
+margin-top:5px;}
+
+.title h1{
+margin-bottom:0px;
+}
+
+li{
+list-style: none;    
+}
+
+a{
+text-decoration:none;
+color: darkslategray;
+}
+
+.Navbar{
+position:absolute;
+top:180px;
+right:20px;
+    
+}
+
+.Navbar ul {
+display:flex;
+}
+
+.Navbar ul li{
+margin-right:50px;
+font-size:16px;
+}
+
+.Navbar ul li a:hover{
+font-size:18px;
+color:darkslategrey;
+text-decoration: underline;
+font-weight:500;
+
+}
+#bar{
+position:absolute;
+top:-90px;
+right:15px;
+font-size:36px;
+float:right;
+display:none;
+}
+
+
+.HomeContent{
+position:absolute;
+top:300px;
+left:50px;
+height:250px;
+width:1080px;
+padding:10px;
+margin: 25px 30px;
+background: url("PicsArt_12-29-04.15.38.jpg");
+background-size:cover;
+background-repeat: no-repeat;
+background-position:bottom;
+
+
+}
+
+.HomeContentText{
+color:#3a3a3d;
+font-weight:300;
+position:absolute;
+top:12px;
+left:600px;
+margin-right:20px;
+text-align:right;
+font-size:18px;
+}
+
+.HomeContentText2{
+margin-right:20px;
+color:#3a3a3d;
+position:absolute;
+top:170px;
+left:650px;
+font-size:18px;
+text-align: right;}
+
+.medText{
+font-size:20px;
+color:#040321;
+text-transform: uppercase;
+}
+
+.ProductsContent{
+position:absolute;
+top:750px;
+left:100px;
+display:grid;
+grid-template-columns: repeat(2,1fr) ;
+grid-gap:3em; 
+justify-content: space-around;
+}
+
+.imageSizing{
+height:500px;
+width:500px;
+}
+
+.AboutContent{
+position:absolute;
+top:3600px;
+left:50px;
+margin-right:40px;
+}
+
+.ContactUsContent{
+position:absolute;
+top:3700px;
+left:50px;
+margin-right:40px;
+}
+
+.OrderNowContent{
+position:absolute;
+top:3800px;
+left:500px;
+}
+
+.footer{
+position:absolute;
+top:3880px;
+left:350px;
+}
+
+.footer ul{
+display:flex;
+align-items: center;}
+
+.footer ul li{
+margin-right:50px;
+
+}
+
+
+@media (max-width:600px) {
+
+    
+    #bar{
+    display:block;
+    }
+    
+    .Navbar ul{
+    display:flex;
+    align-items: center;
+        
+    }
+
+    .Navbar ul li{
+    width:100%;
+    flex-direction:column;
+    text-align:center;
+    }
+    
+    .Navbar ul li a{
+    flex-direction: column;
+    width:100%;
+        
+    }
+}
+
+
+
+
+
+

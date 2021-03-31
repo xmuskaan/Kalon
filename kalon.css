@@ -247,7 +247,7 @@ margin-right:20px;
 /* Footer */
 
 .footer{
-    width:1100px;
+    width:900px;
     margin:auto;
     margin-top:50px;
     margin-bottom: 30px;
@@ -257,26 +257,26 @@ margin-right:20px;
 .footer1{
     color:#000;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.footerCon>div a{
+.footer>div a{
     color:#1E0E62;    
 }
 
 .sub1{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 100px;
-    white-space: nowrap;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
 
 }
 
+
 .sub2{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap:50px;
-    white-space: nowrap;  
+    display: flex;
+    width: 260px;
+    justify-content: space-between;
+
 }
 
 .fbIcon .igIcon {
@@ -369,4 +369,76 @@ input:focus {
     text-align: center;
     margin-left: 40px;
 
+}
+
+
+/******* Products *********/
+
+.products{
+    width:1220px;
+    margin:auto;
+    margin-top:30px;
+}
+
+.proText{
+    text-align: center;
+}
+
+.proText h3{
+    font-size:30px;
+    color:#1E0E62;
+}
+
+.proText p{
+    width:420px;
+    margin:auto;
+    padding:10px;
+}
+
+.filterProducts{
+    width:500px;
+    display:flex;
+    justify-content: space-between;
+    margin: 20px 10px 20px 0; 
+}
+
+.productsList{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:10px;
+}
+
+.productsList>div{
+    border:1px solid #d9d2e8;
+    border-radius: 10px 10px 0px 0px;
+    justify-self:center;
+}
+
+.productsList img{
+    width:370px;
+    height:390px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.productList>div:hover{
+    opacity:40%;
+    cursor:pointer;
+}
+
+.productsList h4{
+    font-size:15px;
+    padding:10px;
+    margin-left:120px;
+}
+
+.productsList button{
+    width:100px;
+    height:40px;
+    background-color:#8E1D53;
+    border-radius: 100px;
+    border-style: none;
+    cursor:pointer;
+    color:#fff;
+    font-size: 15px;
+    margin-left:130px;
 }
