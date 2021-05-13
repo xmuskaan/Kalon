@@ -3,20 +3,20 @@
         <title>Products</title>
         <link rel="stylesheet" href="kalon.css">
         <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
-<script  src="https://kit.fontawesome.com/97446b8f60.js" crossorigin="anonymous"></script>
+        <script  src="https://kit.fontawesome.com/97446b8f60.js" crossorigin="anonymous"></script>
+        <script src="jquery-3.5.1.min.js"></script>
     </head>
 
     <body>
-
         <nav class="NavBar">
             <div class="container">
                 <div class="navCon">
                     <h3 class="Title"> Kalon </h3>
                     <div class="NavList">
-                        <span class="Home"><a href="Kalon.html">Home</a></span>
-                        <span class="AboutUs"><a href="aboutKalon.html">About Us</a></span>
-                        <span class="Products"><a href="Products.html">Products</a></span>
-                        <span class="ContactUs"><a href="ContactUs.html">Contact Us</a></span>
+                        <span class="Home"><a href="Kalon1.html">Home</a></span>
+                        <span class="AboutUs"><a href="aboutUs.html">About Us</a></span>
+                        <span class="Products"><a href="products.html">Products</a></span>
+                        <span class="ContactUs"><a href="ContactKalon.html">Contact Us</a></span>
                     </div>
                 </div>
             </div>
@@ -29,79 +29,128 @@
              </div>
 
             <div class="filterProducts">
-                <select class="filter" name="productstype" >
-                    <option value="earrings">Earrings</option>
-                    <option value="pendants">Pendants</option>
-                    <option value="rings">Rings</option>
+                <select class="filter" onchange="filterSelection(this.value)" name="productstype" >
+                    <option value="all">All</option>
+                    <option value="earrings" >Earrings</option>
+                    <option value="pendants" >Pendants</option>
+                    <option value="rings" >Rings</option>
                 </select>
-
-                <select class="filter" name="sortBy">
+                
+                <select class="filter" onchange="filterSelection(this.value)" name="color">
+                    <option value="all">All</option>
+                    <option value="blue">Blue</option>
+                    <option value="red" >Red</option>
+                    <option value="pink" >Pink</option>
+                    <option value="purple">Purple</option>
+                </select>
+                
+                
+                <select class="filter" onchange="filterSelection(this.value)" name="sortBy">
+                    <option value="all">All</option>
                     <option value="new">New</option>
                     <option value="popular">Popular</option>
                     <option value="pricelh">Price:Low to High</option>
-                    <option value="pricehl">Price:High to Low</option>
-                    <option value="discount">Discount</option>
+                    <option value="pricehl" >Price:High to Low</option>
+                    <option value="discount" >Discount</option>
                 </select>
-                
-                <select class="filter" name="color">
-                    <option value="blue">Blue</option>
-                    <option value="red">Red</option>
-                    <option value="pink">Pink</option>
-                    <option value="purple">Purple</option>
-                </select>   
+
             </div> 
 
             <div class="productsList">
-                <div class="product1">
-                    <img src="MoonEarrings.jpg">
+                <div class="product earrings">
+                    <div class="imgContainer">
+                        <img class="image " src="MoonEarrings.jpg">
+                    </div>
+                   
                     <h4>Moon Earrings</h4>
                     <button class="priceButton">INR 80</button>                    
                 </div>
 
-                <div class="product2">
-                    <img src="MoonEarrings.jpg">
+                <div class="product earrings">
+                    <div class="imgContainer">
+                        <img class="image" src="heartear.jpg">
+                    </div>
+                    
+                    <h4>Heart Earrings</h4>
+                    <button class="priceButton">INR 80</button>                    
+                </div>
+
+                <div class="product earrings">
+                    <div class="imgContainer">
+                        <img class="image" src="pinkgem.jpg">
+                    </div>
+                   
+                    <h4>Pink Gem Earrings</h4>
+                    <button class="priceButton">INR 80</button>                    
+                </div>
+
+                <div class="product earrings">
+                    <div class="imgContainer">
+                        <img class="image" src="purpgem.jpg">
+                    </div>
+                    <h4>Purple Gem Earrings</h4>
+                    <button class="priceButton">INR 80</button>                    
+                </div>
+
+                <div class="product earrings">
+                    <div class="imgContainer">
+                        <img class="image" src="Moonear.jpg">
+                    </div>
+                   
+                    <h4>Open Moon Earrings</h4>
+                    <button class="priceButton">INR 80</button>                    
+                </div>
+
+                <div class="product earrings">
+                    <div class="imgContainer">
+                        <img class="image" src="heartear.jpg">
+                    </div> 
+                  
+                    <h4>Heart Earrings</h4>
+                    <button class="priceButton">INR 80</button>                    
+                </div>
+
+                <div class="product earrings">
+                    <div class="imgContainer">
+                        <img class="image" src="MoonEarrings.jpg">
+                    </div>
+                    
                     <h4>Moon Earrings</h4>
                     <button class="priceButton">INR 80</button>                    
                 </div>
 
-                <div class="product3">
-                    <img src="MoonEarrings.jpg">
+                <div class="product pendants">
+                    <div class="imgContainer">
+                        <img class="image" src="https://source.unsplash.com/1600x900/?nature,water">
+                    </div>
+                   
                     <h4>Moon Earrings</h4>
                     <button class="priceButton">INR 80</button>                    
                 </div>
 
-                <div class="product4">
-                    <img src="MoonEarrings.jpg">
+                <div class="product pendants purple discount">
+                    <div class="imgContainer">
+                        <img class="image" src="https://source.unsplash.com/1600x900/purple">
+                    </div>
+                    
                     <h4>Moon Earrings</h4>
                     <button class="priceButton">INR 80</button>                    
                 </div>
 
-                <div class="product5">
-                    <img src="MoonEarrings.jpg">
+                <div class="product pendants pink">
+                    <div class="imgContainer">
+                        <img class="image" src="https://source.unsplash.com/1600x900/?pink">
+                    </div>
+                    
                     <h4>Moon Earrings</h4>
                     <button class="priceButton">INR 80</button>                    
                 </div>
 
-                <div class="product6">
-                    <img src="MoonEarrings.jpg">
-                    <h4>Moon Earrings</h4>
-                    <button class="priceButton">INR 80</button>                    
-                </div>
-
-                <div class="product7">
-                    <img src="MoonEarrings.jpg">
-                    <h4>Moon Earrings</h4>
-                    <button class="priceButton">INR 80</button>                    
-                </div>
-
-                <div class="product8">
-                    <img src="MoonEarrings.jpg">
-                    <h4>Moon Earrings</h4>
-                    <button class="priceButton">INR 80</button>                    
-                </div>
-
-                <div class="product9">
-                    <img src="MoonEarrings.jpg">
+                <div class="product pendants red ">
+                    <div class="imgContainer">
+                        <img class="image" src="https://source.unsplash.com/1600x900/?red">
+                    </div>
+                    
                     <h4>Moon Earrings</h4>
                     <button class="priceButton">INR 80</button>                    
                 </div>
@@ -138,5 +187,6 @@
             
             </footer>    
         </div>
+        <script src="product.js"></script>
     </body>
 </html>
