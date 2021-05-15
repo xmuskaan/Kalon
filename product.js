@@ -1,3 +1,7 @@
+
+
+
+
 filterSelection("all");
 
 function filterSelection(c) {
@@ -14,8 +18,9 @@ function filterSelection(c) {
         {add(x[i], "show"); 
          console.log(x[i].className.split(" ")); }
         //  else{
-        //    const para= document.querySelector('p');
+        //    const para= document.createElement('p');
         //    para.textContent='No items found!'
+        //    document.body.appendChild('para');
         //  }
 
     }
